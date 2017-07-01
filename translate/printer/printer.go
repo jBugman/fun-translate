@@ -1,3 +1,4 @@
+// Package printer provides Fun pretty-printer. Currently not implemented.
 package printer
 
 /*

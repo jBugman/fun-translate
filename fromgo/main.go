@@ -41,7 +41,8 @@ func main() {
 	// result =
 
 	// Write result to file
-	err = ioutil.WriteFile(outfile, []byte(fmt.Sprint(pkg)), 0644)
+	code := []byte(fmt.Sprint(pkg)) // This won't work since package printer is commented out
+	err = ioutil.WriteFile(outfile, code, 0644)
 	if err != nil {
 		exit(err)
 	}
